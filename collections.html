@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra - Collections</title>
+
+    <link href="src/output.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- Navbar -->
+
+<nav class="flex justify-between items-center px-10 py-5 shadow">
+
+    <h1 class="text-3xl font-bold">
+        NOSTRA
+    </h1>
+
+
+    <div class="hidden md:flex gap-8">
+
+        <a href="index.html">Home</a>
+
+        <a href="collections.html">
+            Collections
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+
+</nav>
+
+
+
+<!-- Collections -->
+
+<section class="p-10">
+
+
+<h1 class="text-4xl font-bold text-center mb-10">
+    Our Collections
+</h1>
+
+
+
+<!-- Search -->
+
+<div class="flex justify-center mb-10">
+
+<input 
+id="search"
+type="text"
+placeholder="Search products..."
+class="border border-black w-full md:w-1/2 p-3 rounded-lg"
+>
+
+</div>
+
+
+
+<!-- Categories -->
+
+<div class="flex justify-center gap-5 mb-10 flex-wrap">
+
+
+<button 
+class="category border border-black px-5 py-2 rounded"
+>
+All
+</button>
+
+
+<button 
+class="category border border-black px-5 py-2 rounded"
+>
+Men
+</button>
+
+
+<button 
+class="category border border-black px-5 py-2 rounded"
+>
+Women
+</button>
+
+
+<button 
+class="category border border-black px-5 py-2 rounded"
+>
+Kids
+</button>
+
+
+</div>
+
+
+
+
+<!-- Products -->
+
+<div 
+id="products"
+class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+
+
+<!-- Product 1 -->
+
+<div class="product">
+
+<img
+src="images/pexels-rozanova-3024591.jpg"
+class="w-full h-80 object-cover rounded"
+>
+
+
+<h2 class="font-bold mt-3">
+Blue Shirt
+</h2>
+
+
+<p>
+Men
+</p>
+
+
+</div>
+
+
+
+
+
+<!-- Product 2 -->
+
+<div class="product">
+
+
+<img
+src="images/pexels-saleheen-26820571.jpg"
+class="w-full h-80 object-cover rounded"
+>
+
+
+<h2 class="font-bold mt-3">
+Summer Dress
+</h2>
+
+
+<p>
+Women
+</p>
+
+
+</div>
+
+
+
+
+
+<!-- Product 3 -->
+
+<div class="product">
+
+
+<img
+src="images/pexels-jose-martin-segura-benites-1422456152-27081016.jpg"
+class="w-full h-80 object-cover rounded"
+>
+
+
+<h2 class="font-bold mt-3">
+Kids Wear
+</h2>
+
+
+<p>
+Kids
+</p>
+
+
+</div>
+
+
+
+
+
+<!-- Product 4 -->
+
+
+<div class="product">
+
+
+<img
+src="images/pexels-neeha-m-2150859703-36432730.jpg"
+class="w-full h-80 object-cover rounded"
+>
+
+
+<h2 class="font-bold mt-3">
+Casual Shirt
+</h2>
+
+
+<p>
+Men
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+<script src="collection.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <link href="src/output.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4c729db828.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- ================= OFFER ================= -->
+
+<div id="offer"
+    class="bg-black text-white h-10 flex justify-center items-center relative">
+
+    <p class="text-sm md:text-base">
+        Join the club & secure
+        <span class="text-blue-400 font-bold">20% OFF</span>
+        your first order - Free shipping on orders over $199
+    </p>
+
+    <button
+        id="close-offer"
+        class="absolute right-5 text-xl cursor-pointer hover:text-red-500">
+        &times;
+    </button>
+
+</div>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="flex justify-between items-center px-6 md:px-12 py-5 shadow-md sticky top-0 bg-white z-50">
+
+    <!-- Logo -->
+
+    <h1 class="text-3xl font-bold cursor-pointer">
+        NOSTRA
+    </h1>
+
+    <!-- Desktop Menu -->
+
+    <div class="hidden md:flex gap-8 font-medium">
+
+        <a href="#" class="hover:text-blue-500">Home</a>
+
+        <a href="#newarrivals" class="hover:text-blue-500">New Arrivals</a>
+
+        <a href="#mostwanted" class="hover:text-blue-500">Most Wanted</a>
+
+        <a href="collections.html" class="hover:text-blue-500">Collections</a>
+
+        <a href="contact.html" class="hover:text-blue-500">Contact</a>
+
+    </div>
+
+    <!-- Mobile Menu Icon -->
+
+    <i
+        id="menuicon"
+        class="fa-solid fa-bars text-2xl md:hidden cursor-pointer">
+    </i>
+
+</nav>
+<!-- Hero Slider -->
+<section class="relative w-[95%] mx-auto mt-6 overflow-hidden rounded-lg">
+
+    <!-- Slider Image -->
+    <img
+        id="slider"
+        src="images/slide1.jpg"
+        class="w-full h-[250px] md:h-[550px] object-cover rounded-lg"
+        alt="Hero Banner"
+    >
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/40 rounded-lg"></div>
+
+    <!-- Content -->
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+
+        <h1 class="text-2xl md:text-6xl font-bold text-center px-4">
+            Level up your style with our
+        </h1>
+
+        <p class="text-lg md:text-2xl mt-4 font-semibold">
+            Summer Collections
+        </p>
+
+        <button
+            class="mt-6 bg-white text-black px-6 py-2 md:px-8 md:py-3 rounded font-semibold hover:bg-gray-200">
+            Shop Now
+        </button>
+
+    </div>
+
+    <!-- Previous Button -->
+    <button
+        onclick="previousImage()"
+        class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white text-4xl md:text-7xl font-light hover:scale-110 duration-300">
+        ❮
+    </button>
+
+    <!-- Next Button -->
+    <button
+        onclick="nextImage()"
+        class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white text-4xl md:text-7xl font-light hover:scale-110 duration-300">
+        ❯
+    </button>
+
+</section>
+
+<!-- ================= BRANDS SECTION ================= -->
+
+<section class="px-10 py-10">
+
+    <h2 class="text-3xl font-bold mb-8">
+        Brands
+    </h2>
+
+
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+
+
+        <!-- Brand 1 -->
+        <div class="border rounded-lg p-5 flex justify-center items-center hover:shadow-lg duration-300">
+
+            <img 
+            src="images/brand1.png"
+            alt="Brand"
+            class="w-24 h-24 object-contain">
+
+        </div>
+
+
+        <!-- Brand 2 -->
+        <div class="border rounded-lg p-5 flex justify-center items-center hover:shadow-lg duration-300">
+
+            <img 
+            src="images/brand2.png"
+            alt="Brand"
+            class="w-24 h-24 object-contain">
+
+        </div>
+
+
+        <!-- Brand 3 -->
+        <div class="border rounded-lg p-5 flex justify-center items-center hover:shadow-lg duration-300">
+
+            <img 
+            src="images/brand3.png"
+            alt="Brand"
+            class="w-24 h-24 object-contain">
+
+        </div>
+
+
+        <!-- Brand 4 -->
+        <div class="border rounded-lg p-5 flex justify-center items-center hover:shadow-lg duration-300">
+
+            <img 
+            src="images/brand4.png"
+            alt="Brand"
+            class="w-24 h-24 object-contain">
+
+        </div>
+
+
+        <!-- Brand 5 -->
+        <div class="border rounded-lg p-5 flex justify-center items-center hover:shadow-lg duration-300">
+
+            <img 
+            src="images/brand5.png"
+            alt="Brand"
+            class="w-24 h-24 object-contain">
+
+        </div>
+
+
+        <!-- Brand 6 -->
+        <div class="border rounded-lg p-5 flex justify-center items-center hover:shadow-lg duration-300">
+
+            <img 
+            src="images/brand6.png"
+            alt="Brand"
+            class="w-24 h-24 object-contain">
+
+        </div>
+
+
+    </div>
+
+
+</section>
+<!-- Customer Experience Section -->
+
+<section class="px-5 md:px-10 mt-16">
+
+    <!-- Heading -->
+
+    <h1 class="text-3xl md:text-4xl font-bold mb-8">
+        We Provide Best Customer Experience
+    </h1>
+
+    <p class="text-gray-600 mb-8">
+        We ensure that our customers have the best shopping experience with premium quality products and services.
+    </p>
+
+
+    <!-- Experience Cards -->
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+        <!-- Card 1 -->
+
+        <div class="bg-gray-100 p-6 rounded-lg">
+
+            <i class="fa-solid fa-face-smile text-4xl mb-4"></i>
+
+            <h2 class="text-xl font-bold mb-3">
+                Satisfaction Guarantee
+            </h2>
+
+            <p class="text-gray-600">
+                We provide high quality products and ensure complete customer satisfaction.
+            </p>
+
+        </div>
+
+
+
+        <!-- Card 2 -->
+
+        <div class="bg-gray-100 p-6 rounded-lg">
+
+            <i class="fa-solid fa-shirt text-4xl mb-4"></i>
+
+            <h2 class="text-xl font-bold mb-3">
+                New Arrivals Every Week
+            </h2>
+
+            <p class="text-gray-600">
+                Discover the latest fashion trends with our new collections.
+            </p>
+
+        </div>
+
+
+
+
+        <!-- Card 3 -->
+
+        <div class="bg-gray-100 p-6 rounded-lg">
+
+            <i class="fa-solid fa-truck-fast text-4xl mb-4"></i>
+
+            <h2 class="text-xl font-bold mb-3">
+                Fast & Free Shipping
+            </h2>
+
+            <p class="text-gray-600">
+                Enjoy quick delivery and free shipping on selected orders.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+<!-- ================= NEW ARRIVALS ================= -->
+
+<section class="px-10 mt-16" id="newarrivals">
+
+    <!-- Heading -->
+
+    <h1 class="text-4xl font-bold mb-8">
+        New Arrivals
+    </h1>
+
+
+    <!-- Product Container -->
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+
+        <!-- Product 1 -->
+
+        <div class="relative group">
+
+            <img 
+            src="images/pexels-yankrukov-9001968.jpg"
+            class="w-full h-[300px] object-cover rounded-lg">
+
+
+            <button
+            class="absolute top-3 right-3 bg-white rounded-full px-3 py-2 text-xl">
+                ♡
+            </button>
+
+
+            <h2 class="text-xl font-semibold mt-3">
+                Floral Dress
+            </h2>
+
+
+            <p class="text-gray-500">
+                Summer Collection
+            </p>
+
+        </div>
+
+
+
+        <!-- Product 2 -->
+
+
+        <div class="relative group">
+
+            <img 
+            src="images/pexels-yash-singh-407281087-18149121.jpg"
+            class="w-full h-[300px] object-cover rounded-lg">
+
+
+            <button
+            class="absolute top-3 right-3 bg-white rounded-full px-3 py-2 text-xl">
+                ♡
+            </button>
+
+
+            <h2 class="text-xl font-semibold mt-3">
+                Casual Shirt
+            </h2>
+
+
+            <p class="text-gray-500">
+                Latest Style
+            </p>
+
+        </div>
+
+
+
+
+        <!-- Product 3 -->
+
+
+        <div class="relative group">
+
+            <img 
+            src="images/pexels-zahra-talebizadeh-423932604-20954049.jpg"
+            class="w-full h-[300px] object-cover rounded-lg">
+
+
+            <button
+            class="absolute top-3 right-3 bg-white rounded-full px-3 py-2 text-xl">
+                ♡
+            </button>
+
+
+            <h2 class="text-xl font-semibold mt-3">
+                Party Wear
+            </h2>
+
+
+            <p class="text-gray-500">
+                Premium Collection
+            </p>
+
+        </div>
+
+
+
+
+
+        <!-- Product 4 -->
+
+
+        <div class="relative group">
+
+            <img 
+            src="images/pexels-vika-glitter-392079-34387643.jpg"
+            class="w-full h-[300px] object-cover rounded-lg">
+
+
+            <button
+            class="absolute top-3 right-3 bg-white rounded-full px-3 py-2 text-xl">
+                ♡
+            </button>
+
+
+            <h2 class="text-xl font-semibold mt-3">
+                Trendy Outfit
+            </h2>
+
+
+            <p class="text-gray-500">
+                New Arrival
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Shop Button -->
+
+
+    <div class="flex justify-center mt-10">
+
+        <button
+        class="bg-black text-white px-10 py-3 rounded-lg hover:bg-gray-800">
+            Shop More
+        </button>
+
+    </div>
+
+
+</section>
+<!-- ================= MOST WANTED ================= -->
+
+<section class="px-6 md:px-12 mt-16" id="mostwanted">
+
+    <!-- Heading -->
+
+    <h2 class="text-3xl font-bold mb-8">
+        Most Wanted
+    </h2>
+
+
+    <!-- Products Container -->
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+
+        <!-- Product 1 -->
+
+        <div class="relative group">
+
+            <img
+            src="images/pexels-skgphotography-14784502.jpg"
+            class="w-full h-[300px] object-cover rounded-lg">
+
+
+            <!-- Heart -->
+
+            <button
+            class="absolute top-3 right-3 bg-white rounded-full p-3 text-xl">
+                ♡
+            </button>
+
+
+            <!-- Offer Tag -->
+
+            <p class="absolute top-3 left-3 bg-red-500 text-white px-3 py-1 rounded">
+                New
+            </p>
+
+
+        </div>
+
+
+        <!-- Product 2 -->
+
+
+        <div class="relative group">
+
+            <img
+            src="images/pexels-saleheen-26820571.jpg"
+            class="w-full h-[300px] object-cover rounded-lg">
+
+
+            <button
+            class="absolute top-3 right-3 bg-white rounded-full p-3 text-xl">
+                ♡
+            </button>
+
+
+            <p class="absolute top-3 left-3 bg-red-500 text-white px-3 py-1 rounded">
+                Sale
+            </p>
+
+
+        </div>
+
+
+
+        <!-- Product 3 -->
+
+
+        <div class="relative group">
+
+            <img
+            src="images/pexels-jose-martin-segura-benites-1422456152-27256416.jpg"
+            class="w-full h-[300px] object-cover rounded-lg">
+
+
+            <button
+            class="absolute top-3 right-3 bg-white rounded-full p-3 text-xl">
+                ♡
+            </button>
+
+
+            <p class="absolute top-3 left-3 bg-red-500 text-white px-3 py-1 rounded">
+                Popular
+            </p>
+
+
+        </div>
+
+
+
+        <!-- Product 4 -->
+
+
+        <div class="relative group">
+
+            <img
+            src="images/pexels-katy-walters-1077821891-29479992.jpg"
+            class="w-full h-[300px] object-cover rounded-lg">
+
+
+            <button
+            class="absolute top-3 right-3 bg-white rounded-full p-3 text-xl">
+                ♡
+            </button>
+
+
+            <p class="absolute top-3 left-3 bg-red-500 text-white px-3 py-1 rounded">
+                Trending
+            </p>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+<!-- ================= LIMITED OFFER ================= -->
+
+<section class="w-[95%] mx-auto mt-16 relative h-[400px] overflow-hidden rounded-lg">
+
+    <!-- Background Image -->
+
+    <img 
+        src="images/offer.jpg"
+        class="w-full h-full object-cover"
+    >
+
+
+    <!-- Overlay -->
+
+    <div class="absolute inset-0 bg-black/60"></div>
+
+
+    <!-- Content -->
+
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+
+
+        <h1 class="text-5xl md:text-6xl font-bold">
+            Limited Offer
+        </h1>
+
+
+        <p class="text-2xl mt-5">
+            Get up to 50% OFF
+        </p>
+
+
+        <p class="mt-3 text-lg">
+            Don't miss the chance to upgrade your style
+        </p>
+
+
+        <button
+            class="mt-8 bg-white text-black px-8 py-3 rounded font-semibold hover:bg-gray-200">
+
+            Shop Now
+
+        </button>
+
+
+    </div>
+
+
+</section>
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="bg-black text-white py-10 px-5 mt-10">
+
+    <div class="text-center max-w-3xl mx-auto">
+
+        <h2 class="text-3xl md:text-4xl font-bold">
+            Subscribe to our Newsletter
+        </h2>
+
+        <p class="mt-4 text-gray-300">
+            Get updates about new collections, special offers and exclusive deals.
+        </p>
+
+
+        <div class="mt-8 flex flex-col md:flex-row justify-center gap-4">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full md:w-[500px] px-5 py-3 text-black rounded outline-none"
+            >
+
+
+            <button
+                class="bg-white text-black px-8 py-3 rounded font-semibold hover:bg-gray-300">
+                Subscribe
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-black text-white px-8 py-10">
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+
+        <!-- Logo -->
+
+        <div>
+
+            <h1 class="text-3xl font-bold">
+                NOSTRA
+            </h1>
+
+            <p class="mt-4 text-gray-400">
+                Fashion that defines your style.
+                Discover premium collections with Nostra.
+            </p>
+
+        </div>
+
+
+
+        <!-- Quick Links -->
+
+        <div>
+
+            <h2 class="text-xl font-semibold mb-4">
+                Quick Links
+            </h2>
+
+            <div class="flex flex-col gap-3 text-gray-300">
+
+                <a href="#">Home</a>
+
+                <a href="#">New Arrivals</a>
+
+                <a href="#">Most Wanted</a>
+
+                <a href="#">Collections</a>
+
+                <a href="#">Contact</a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Customer Service -->
+
+        <div>
+
+            <h2 class="text-xl font-semibold mb-4">
+                Customer Service
+            </h2>
+
+            <div class="flex flex-col gap-3 text-gray-300">
+
+                <a href="#">
+                    Shipping
+                </a>
+
+                <a href="#">
+                    Returns
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Social Media -->
+
+        <div>
+
+            <h2 class="text-xl font-semibold mb-4">
+                Follow Us
+            </h2>
+
+
+            <div class="flex gap-5 text-2xl">
+
+                <i class="fa-brands fa-instagram cursor-pointer"></i>
+
+                <i class="fa-brands fa-facebook cursor-pointer"></i>
+
+                <i class="fa-brands fa-twitter cursor-pointer"></i>
+
+                <i class="fa-brands fa-youtube cursor-pointer"></i>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <hr class="my-8 border-gray-700">
+
+
+    <p class="text-center text-gray-400">
+        © 2026 Nostra. All Rights Reserved.
+    </p>
+
+
+</footer>
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div
+id="sidemenu"
+class="fixed top-0 right-[-100%] w-64 h-full bg-black text-white duration-500 z-50">
+
+    <!-- Close Icon -->
+
+    <div class="flex justify-end p-5">
+
+        <i
+            id="closemenu"
+            class="fa-solid fa-xmark text-2xl cursor-pointer">
+        </i>
+
+    </div>
+
+    <!-- Links -->
+
+    <div class="flex flex-col gap-8 pl-8 text-lg">
+
+        <a href="#">Home</a>
+
+        <a href="#">New Arrivals</a>
+
+        <a href="#">Most Wanted</a>
+
+        <a href="#">Collections</a>
+
+        <a href="#">Contact</a>
+
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
